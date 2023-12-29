@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Results</title>
+</head>
+<body>
+    <h1>Object Detection Results</h1>
+
+    <h2>Uploaded Image</h2>
+    <img src="{{ url_for('static', filename=image_path) }}" alt="Uploaded Image" style="max-width: 50%;">
+
+    <!-- Add additional content or visualizations related to object detection results -->
+
+    <!-- Example: Display detected objects or any other relevant information -->
+    {% if detections %}
+        <h2>Detection Results</h2>
+        <ul>
+            {% for detection in detections %}
+                <li>{{ detection }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- Add more content as needed -->
+
+    <a href="/">Back to Upload</a>
+</body>
+</html>
