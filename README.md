@@ -21,7 +21,7 @@ The project is organized into the following files and directories:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/object-detection-web-app.git
+    git clone https://github.com/AmmadMughal20/ImageCropper.git
     ```
 
 2. Install dependencies:
